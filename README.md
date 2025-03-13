@@ -24,11 +24,9 @@ Vue aplikacija - Uporabniški vmesnik, ki omogoča interakcijo z mikrostoritvami
 ```plaintext
 HyperCircuit/
 │── services/
-│   ├── product/
-│   ├── order/
-│   ├── user/
-│   ├── cart/
-│   ├── payment/
+│   ├── product-service/
+│   ├── user-service/
+│   ├── cart-service/
 │── frontend/ (Vue aplikacija)
 │── docs/ (dokumentacija, diagrami)
 │── README.md
