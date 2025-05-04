@@ -40,7 +40,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Ensure jest is executable
+        run: chmod +x ./node_modules/.bin/jest
+
       - name: Run tests
-        env:
-          MONGO_URI_TEST: mongodb://localhost:27017/test_db
         run: npx test
