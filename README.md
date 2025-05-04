@@ -5,8 +5,8 @@ HyperCircuit je mikrostoritvena aplikacija za prodajo računalniške strojne opr
 Aplikacija je sestavljena iz treh mikrostoritev in enega frontenda:
 ### **Mikrostoritve**
 1. Product Service - upravljanje izdelkov in zalog
-* dodajanje, urejanje in brisanje izdelkov
-* upravljanje kategorij izdelkov
+* iskanje, dodajanje, urejanje in brisanje izdelkov
+* filtriranje izdelkov po ceni in kategoriji
 2. User Service - upravljanje uporabnikov in avtentikacija
 * registracija in prijava uporabnikov
 * avtentikacija uporabnikov z oAuth
