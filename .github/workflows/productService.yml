@@ -1,14 +1,21 @@
-name: Run Tests
+name: Run Tests - Product Service
 
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'services/product-service/**'
   pull_request:
     branches: [ main ]
+    paths:
+      - 'services/product-service/**'
 
 jobs:
   test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: services/product-service
 
     services:
       mongo:
