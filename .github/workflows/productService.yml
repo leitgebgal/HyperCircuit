@@ -38,9 +38,9 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Run tests
         env:
           MONGO_URI_TEST: mongodb://localhost:27017/test_db
-        run: npm test
+        run: npx test
