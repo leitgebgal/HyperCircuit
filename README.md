@@ -9,7 +9,7 @@ Aplikacija je sestavljena iz treh mikrostoritev in enega frontenda:
 * filtriranje izdelkov po ceni in kategoriji
 2. User Service - upravljanje uporabnikov in avtentikacija
 * registracija in prijava uporabnikov
-* avtentikacija uporabnikov z oAuth
+* avtentikacija uporabnikov z JWT
 3. Cart Service - košarica in proces nakupa
 * Dodajanje in odstranjevanje izdelkov iz košarice
 * Stranjevanje stanja košarice za registrirane in anonimne uporabnike
