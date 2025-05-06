@@ -29,6 +29,7 @@ describe('Product API', () => {
       name: 'Test Product',
       description: 'This is a test product',
       price: 100,
+      imageUrl: 'https://cdn.mos.cms.futurecdn.net/JuUdfVUkX4cXBbAgnmdCKY.jpg',
       stock: 10,
       category: 'Test',
     };
@@ -55,8 +56,8 @@ describe('Product API', () => {
 
   it('should fetch all products', async () => {
     const products = [
-      { name: 'Product 1', price: 100 },
-      { name: 'Product 2', price: 120 },
+      { name: 'Product 1', price: 100, imageUrl: 'https://cdn.mos.cms.futurecdn.net/JuUdfVUkX4cXBbAgnmdCKY.jpg', stock: 20, category: 'TestCategory' },
+      { name: 'Product 2', price: 120, imageUrl: 'https://cdn.mos.cms.futurecdn.net/JuUdfVUkX4cXBbAgnmdCKY.jpg', stock: 20, category: 'TestCategory' },
     ];
 
     // Mock the find method to return a list of products
@@ -74,7 +75,10 @@ describe('Product API', () => {
     const product = { 
       _id: mockId,
       name: 'Single Product Test', 
-      price: 75 
+      price: 75 ,
+      imageUrl: 'https://cdn.mos.cms.futurecdn.net/JuUdfVUkX4cXBbAgnmdCKY.jpg',
+      stock: 20, 
+      category: 'TestCategory'
     };
 
     // Mock the findById method to return a single product
@@ -92,6 +96,7 @@ describe('Product API', () => {
       _id: mockId,
       name: 'Updated Product', 
       price: 150, 
+      imageUrl: 'https://cdn.mos.cms.futurecdn.net/JuUdfVUkX4cXBbAgnmdCKY.jpg',
       stock: 15, 
       category: 'TestUpdated' 
     };
@@ -125,7 +130,7 @@ describe('Product API', () => {
 
   it('should filter products by price and category', async () => {
     const filteredProducts = [
-      { name: 'Item B', price: 90, category: 'Mouse' }
+      { name: 'Item B', price: 90, category: 'Mouse', imageUrl: 'https://cdn.mos.cms.futurecdn.net/JuUdfVUkX4cXBbAgnmdCKY.jpg', stock: 20 }
     ];
 
     // Mock the find method for filtering

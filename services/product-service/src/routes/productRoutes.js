@@ -39,6 +39,7 @@ router.get('/', productController.getProducts);
  *               - description
  *               - stock
  *               - category
+ *               - imageUrl
  *             properties:
  *               name:
  *                 type: string
@@ -50,6 +51,8 @@ router.get('/', productController.getProducts);
  *                 type: number
  *               category:
  *                 type: string
+ *              imageUrl:
+ *                type: string
  *     responses:
  *       201:
  *         description: Product created
@@ -109,6 +112,8 @@ router.get('/:id', productController.getProduct);
  *                 type: number
  *               category:
  *                 type: string
+ *              imageUrl:
+ *                type: string
  *     responses:
  *       200:
  *         description: Product updated
