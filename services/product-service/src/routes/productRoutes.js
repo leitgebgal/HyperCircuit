@@ -112,8 +112,8 @@ router.get('/:id', productController.getProduct);
  *                 type: number
  *               category:
  *                 type: string
- *              imageUrl:
- *                type: string
+ *               imageUrl:
+ *                 type: string
  *     responses:
  *       200:
  *         description: Product updated
