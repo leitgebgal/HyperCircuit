@@ -51,8 +51,8 @@ router.get('/', productController.getProducts);
  *                 type: number
  *               category:
  *                 type: string
- *              imageUrl:
- *                type: string
+ *               imageUrl:
+ *                 type: string
  *     responses:
  *       201:
  *         description: Product created
