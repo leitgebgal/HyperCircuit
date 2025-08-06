@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package feri.leitgebgal;
+
+service UserService {
+  rpc GetAllUsers (Empty) returns (UserList);
+  rpc GetUserById (UserIdRequest) returns (User);
+  rpc Register (User) returns (StatusResponse);
+  rpc Login (User) returns (StatusResponse);
+  rpc DeleteUser (UserIdRequest) returns (StatusResponse);
+}
+
+message Empty {
+}
+
+message User {
+  string id = 1;
+  string username = 2;
+  string email = 3;
+  string password = 4;
+}
+
+message UserList {
+  repeated User users = 1;
+}
+
+message UserIdRequest {
+  string id = 1;
+}
+
+message StatusResponse {
+  bool success = 1;
+}
